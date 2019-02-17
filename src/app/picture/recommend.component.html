@@ -1,0 +1,15 @@
+  <div class="card-deck mb-4 text-center" *ngIf="suggestionDto.suggestionList.length > 0">
+    <ng-container *ngFor="let list of suggestionDto.suggestionList; let i = index">
+      <div class="card mb-4 shadow-sm" >
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{list.CarrierName}}</font></font></h4>
+        </div>
+        <img class="card-img-top" src="{{list.CarrierImageUrl}}" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{list.Price}}</font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> <br>{{userDto.currency}}/deal</font></font></small></h1>
+          <button type="button" class="btn btn-lg btn-block btn-primary"
+          (click)="goToUrl(i)" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GO Travel</font></font></button> 
+        </div>
+      </div>
+      </ng-container>
+  </div>

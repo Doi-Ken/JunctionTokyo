@@ -1,0 +1,12 @@
+<div class="container">
+
+<drag-scroll>
+  <ng-container *ngFor="let data of imageUrlList;let i = index">
+  <img height="200" drag-scroll-item style="cursor: hand; cursor:pointer;"
+  src="{{data}}" (click)="onFileClick(i)"/>
+  </ng-container>
+</drag-scroll>
+Outbound Date: <ng2-flatpickr [(ngModel)]="outboundDate"></ng2-flatpickr>
+<!-- Inbound Date: <ng2-flatpickr [(ngModel)]="inboundDate"></ng2-flatpickr> -->
+
+<app-recommend *ngIf="inputRecommendFlag">Loading...</app-recommend>

@@ -1,0 +1,65 @@
+.imgWrap {
+	overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+	width: 320px;	/*画像の幅*/
+	height: 180px;	/*画像の高さ*/
+    background: #000;
+}
+.imgWrapOnClick {
+	overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+	width: 320px;	/*画像の幅*/
+	height: 180px;	/*画像の高さ*/
+    background: #000;
+    opacity : 0.3;
+}
+
+.imgWrap img:hover {
+	transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+    opacity: 0.6;
+    
+}
+.imgWrap  img{
+display: block;
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+    cursor : pointer;
+}
+
+
+    
+    button.submit{
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1.0);
+        background-image: -webkit-linear-gradient(#6795fd 0%, #67ceff 100%);
+        background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.29);
+        border-bottom: solid 3px #5e7fca;
+        
+    }
+    
+    button.submit:active{
+        transform: translateY(4px);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);
+        color: rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
+ 
+    button.submit:disabled{
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);
+        color: rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
+
+
+    button.course{
+        width: 30px;
+        height: 25px;
+        border-radius: 50%;
+       
+      }
+      
+      button.course:hover{
+          background: #668ad8;
+      }
+      
